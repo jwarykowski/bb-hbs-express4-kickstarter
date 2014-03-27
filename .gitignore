@@ -7,3 +7,4 @@ node_modules
 test/temp
 public/vendor
 newrelic_agent.log
+npm-debug.log

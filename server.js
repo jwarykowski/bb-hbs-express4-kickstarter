@@ -17,7 +17,7 @@ require('./routes')(app);
 
 // env and port
 var env   = process.env.NODE_ENV || 'development';
-var port  = process.env.PORT || 3000
+var port  = process.env.PORT || 3000;
 
 // handlebars engine
 app.engine('hbs', exphbs({defaultLayout: 'main', extname: '.hbs'}));
@@ -28,7 +28,6 @@ app.use(morgan({ immediate: true, format: 'dev' }));
 app.use(compress());
 app.use(bodyParser());        // pull information from html in POST
 app.use(methodOverride());    // simulate DELETE and PUT
-console.log(__dirname);
 app.use(express.static(__dirname, '/public'));
 
 // development only

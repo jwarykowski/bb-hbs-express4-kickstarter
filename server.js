@@ -7,7 +7,8 @@ var express         = require('express'),
     compress        = require('compression'),
     bodyParser      = require('body-parser'),
     methodOverride  = require('method-override'),
-    errorHandler    = require('errorhandler');
+    errorHandler    = require('errorhandler'),
+    winston         = require('winston');
 
 var app = express();
 
@@ -36,4 +37,4 @@ if ('development' == env) {
 }
 
 app.listen(port);
-console.log('Express server listening on port ' + port);
+winston.info('Express server listening on port ' + port);

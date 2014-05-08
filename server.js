@@ -4,7 +4,6 @@
 // require('newrelic');
 
 // env configuration
-var env  = process.env.NODE_ENV || 'development';
 var port = process.env.PORT || 3000;
 
 // modules
